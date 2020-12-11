@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <!-- SideBar -->
+        <aside class="sidenav">
+            <ul>
+                <li class="logo">
+                    <img src="img/klenty_logo.png" />
+                </li>
+                <li>
+                    <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Profile</span>
+                </li>
+                <li>
+                    <i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Mail</span>
+                </li>
+                <li>
+                    <i class="fa fa-calendar-check-o fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Calender</span>
+                </li>
+                <li>
+                    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Message</span>
+                </li>
+                <li>
+                    <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Call</span>
+                </li>
+                <li>
+                    <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Graph</span>
+                </li>
+                <li>
+                    <i class="fa fa-cogs fa-lg" aria-hidden="true"></i>
+                    <span class="tooltip">Settings</span>
+                </li>
+            </ul>
+            <ul class="side-btn">
+                <li>
+                    <img src="img/dialpad.png" />
+                    <span class="tooltip">Dialpad</span>
+                </li>
+                <li>
+                    <i class="fa fa-question-circle-o fa-lg pink" aria-hidden="true"></i>
+                    <span class="tooltip">Queries</span>
+                </li>
+            </ul>
+        </aside>
+        <!-- ----------------------------------------------------------------- -->
+
+        <div class="w-100">
+            <!-- Header -->
+            <header>
+                <div class="title">Home</div>
+                <div class="row head-right">
+                    <span class="col">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                    </span>
+                    <span class="col profile">
+                        <img src="https://via.placeholder.com/40x40?text=User">
+                    <div class="card profile-details">
+                        <div class="card-header">
+                            <div>
+                                    <p class="blue">Bhuvanesh Ram</p>
+                                    <p> bhuvanesh@klenty.com</p> 
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <i class="blue fa fa-gift"></i>
+                                &nbsp; What's New?
+                                <span class="whats-new"> 1 </span>
+                            </p>
+                            <p>
+                                <i class="red fa fa-heart"></i>
+                                &nbsp; Refer a friend
+                            </p>
+                            <p>
+                                <i class="blue fa fa-cog"></i>
+                                &nbsp; Settings
+                            </p>
+                            <p>
+                                <i class="blue fa fa-sign-out"></i>
+                                &nbsp; Sign out
+                            </p>
+                        </div>
+                    </div>
+                </span>
+                </div>
+            </header>
+            <!-- ----------------------------------------------------------------- -->
+
+            <!-- Body -->
+            <div class="container">
+                <!-- Left Body -->
+                <div class="row w-100">
+                    <div class="left-side col">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-content">
+                                    <div class="col-5">&nbsp; Total Days</div>
+                                    <div class="card-head-right col-5">0</div>
+                                </div>
+                            </div>
+                            <div class="card-body no-flex">
+                                <div class="graph"></div>
+                                <div class="axis">
+                                    <div class="tick"><span>Dec 04</span></div>
+                                    <div class="tick"><span>Dec 05</span></div>
+                                    <div class="tick"><span>Dec 06</span></div>
+                                    <div class="tick"><span>Dec 07</span></div>
+                                    <div class="tick"><span>Dec 08</span></div>
+                                    <div class="tick"><span>Dec 09</span></div>
+                                    <div class="tick"><span>Dec 10</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-content">
+                                    <div class="col-5">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        &nbsp; Emails Scheduled
+                                    </div>
+                                    <div class="card-head-right col-5">0</div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-4">
+                                    <div class="count">0</div>
+                                    <div class="day">Today</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="count">0</div>
+                                    <div class="day">Upcoming</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="count">0</div>
+                                    <div class="day">Awaiting Approval</div>
+                                </div>
+                                <div class="col-4 last">
+                                    <div class="count">0</div>
+                                    <div class="day">Errors</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-content">
+                                    <div class="col-5">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        &nbsp; Tasks Scheduled
+                                    </div>
+                                    <div class="card-head-right col-5">5</div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-4">
+                                    <div class="count">0</div>
+                                    <div class="day">Today</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="count">0</div>
+                                    <div class="day">Upcoming</div>
+                                </div>
+                                <div class="col-4"></div>
+                                <div class="col-4 last">
+                                    <div class="count">5</div>
+                                    <div class="day">Overdue</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-content">
+                                    <div class="col-5">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        &nbsp; Calls Scheduled
+                                    </div>
+                                    <div class="card-head-right col-5">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Of Left Side -->
+                    <div class="right-side col">
+                        <div class="header-content">
+                            Livefeed
+                        </div>
+                        <div class="filter">
+                            <div class="col-8">
+                                <select>
+                                    <option value="all">All</option>
+                                </select>
+                                <i class="fa fa-filter filter-icon" aria-hidden="true"></i>
+                                <span class="filtered-user">
+                                    <span class="user-name">User: bhuvanesh@klenty.com</span>
+                                </span>
+                            </div>
+                            <div class="input-right col-4">
+                                <label for="search">
+                                    <i class="fa fa-search"></i>
+                                </label>
+                                <input type="text" name="search" id="search">
+                            </div>
+                        </div>
+                        <div class="notification">
+                            <div class="notification-image">
+                                <img src="img/no-notification.webp">
+                            </div>
+                            <div class="notification-head">
+                                No Notification yet
+                            </div>
+                            <div class="notification-content">
+                                <p>
+                                    You'll start seeing real time notifications when your emails are opened,
+                                    clicked, or replied to.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------- -->
+        </div>
+    </div>
+</body>
+
+</html>
